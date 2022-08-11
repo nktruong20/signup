@@ -35,21 +35,34 @@ export class SignupComponent implements OnInit {
   get form():any{
     return this.formInfo.controls;
   }
+  dnoneEye(){
+    let eye = document.getElementById('eye') as HTMLDivElement | null;
+    let password = document.getElementById('password') as HTMLInputElement | null;
+    if(password?.value == ''){
+      eye?.classList.add('d-none');
+    }else{
+      eye?.classList.remove('d-none');
+    }
+  }
   signUp():void{
     this.http.post<any>(" http://localhost:3000/signupForm",this.formInfo.value).subscribe((data)=>{
       this.formInfo.reset();
-      this.route.navigate(['login'])
+      this.route.navigate(['login']);
     })
   }
   showpass():void{
+    let eye = document.getElementById('eye') as HTMLDivElement | null;
     if(this.isBool){
-      document.getElementById('password')?.setAttribute("type","text")
+      document.getElementById('password')?.setAttribute("type","text");
+      eye?.setAttribute('class','fa-solid fa-eye-slash eyes');
       this.isBool = false
     }else{
       document.getElementById('password')?.setAttribute("type","password")
       this.isBool = true;
+      eye?.setAttribute('class','fa-solid fa-eye eyes');
     }
 
   }
+
 
 }

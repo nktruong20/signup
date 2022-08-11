@@ -22,6 +22,15 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  dnoneEye(){
+    let eye = document.getElementById('eye') as HTMLDivElement | null;
+    let password = document.getElementById('password') as HTMLInputElement | null;
+    if(password?.value == ''){
+      eye?.classList.add('d-none');
+    }else{
+      eye?.classList.remove('d-none');
+    }
+  }
   login():void{
     this.http.get<any>("http://localhost:3000/signupForm").subscribe((data)=>{
       const user = data.find((a:any)=>{
@@ -53,14 +62,17 @@ export class LoginComponent implements OnInit {
     })
   }
   showpass():void{
+    let eye = document.getElementById('eye') as HTMLDivElement | null;
     if(this.isBool){
       document.getElementById('password')?.setAttribute("type","text");
-      this.isBool = false;
+      eye?.setAttribute('class','fa-solid fa-eye-slash eyes');
+      this.isBool = false
     }else{
       document.getElementById('password')?.setAttribute("type","password")
       this.isBool = true;
+      eye?.setAttribute('class','fa-solid fa-eye eyes');
     }
-
   }
+
 
 }

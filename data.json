@@ -14,5 +14,31 @@
       "password": "12345",
       "id": 2
     }
+  ],
+  "product" : [
+    {
+      "id":1,
+      "name" : "áo phông nam",
+      "category_id":1,
+      "price":100,
+      "salePercent":100,
+      "newness":99,
+      "img":"https://cf.shopee.vn/file/fc09c42cce4f20d175dcbf7614d92332",
+      "allImg" : [{
+        "id":1,
+        "img":"https://cf.shopee.vn/file/fc09c42cce4f20d175dcbf7614d92332"
+      },
+      {
+        "id":2,
+        "img":"https://cf.shopee.vn/file/90ea2964ef6d74dc049db4f3473e46e8"
+      },
+      {
+        "id":3,
+        "img":"https://namlongfashion.com/wp-content/uploads/2017/09/ao-khoac-ni-hoodie-tron-7.jpg"
+      }],
+      "instock":true,
+      "purchases":100,
+      "description":"aaaaaaaaa"
+    }
   ]
 }

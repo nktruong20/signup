@@ -1,0 +1,167 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-7">
+            <owl-carousel-o [options]="customOptions">
+
+                <ng-container *ngFor="let slide of sliderImg">
+                  <ng-template carouselSlide [id]="slide.id">
+                    <img [src]="slide.img" width="100%">
+                  </ng-template>
+                </ng-container>
+            
+              </owl-carousel-o>
+        </div>
+        <div class="col-md-5">
+            <div class="title">
+                <h5><span><i class="fa-solid fa-check"></i> favorite</span> Áo Hoodie Dáng Rộng In Chữ Phong Cách Hip hop Thời Trang Mùa Đông Cho Nam Cỡ M-5XL </h5>
+            </div>
+            <div class="price">
+                <div class="flex">
+                    <div class="old">
+                        <span>180.000</span>
+                    </div>
+                    <div class="new">
+                        <span>145.000</span>
+                    </div>
+                    <div class="sale">
+                        <span>19% sale</span>
+                    </div>
+                </div>
+            </div>
+            <div class="newness">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h6>New degree</h6>
+                    </div>
+                    <div class="col-md-9">
+                        <h6>99%</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="status">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h6>Status</h6>
+                    </div>
+                    <div class="col-md-3">
+                        <h6>stocking</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="purchases">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h6>purchases </h6>
+                    </div>
+                    <div class="col-md-9">
+                        <h6>1633 sold</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="transport">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h6>Transport </h6>
+                    </div>
+                    <div class="col-md-9">
+
+                        <select>
+                            <option value="0">HaNoi</option>
+                            <option value="1">HCM</option>
+                            <option value="0">DaNang</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="size">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h6>Size </h6>
+                    </div>
+                    <div class="col-md-9">
+                       <div class="row">
+                        <div class="col-md-3"><h6>M</h6></div>
+                        <div class="col-md-3"><h6>L</h6></div>
+                        <div class="col-md-3"><h6>XL</h6></div>
+                        <div class="col-md-3"><h6>XXL</h6></div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="quantity">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h6>Quantity</h6>
+                    </div>
+                    <div class="col-md-9">
+                        <span class="useQuantity">-</span><input class="quantityInp" type="text" value="1"><span class="useQuantity">+</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h3>ADD TO CART</h3>
+            </div>
+            <div class="return">
+                <div class="row">
+                    <div class="col-md-5">
+                        <h6><i class="fa-solid fa-shop"></i> Guaranteed shop</h6>
+                    </div>
+                    <div class="col-md-7">
+                        <h6>3 days return / refund</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="description">
+                <h6>Description : </h6>
+                <span>Mô tả</span>
+            </div>
+
+        </div>
+    </div>
+    <div class="category">
+        <h3>you can see more</h3>
+        <div class="row">   
+            <div class="col-md-3">
+               <div class="hover">
+                <div class="img">
+                    <img src="https://cf.shopee.vn/file/fc09c42cce4f20d175dcbf7614d92332" alt="">
+                </div>
+                <div class="name">
+                    <h6>Xem thêm</h6>
+                </div>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div class="hover">
+                <div class="img">
+                    <img src="https://cf.shopee.vn/file/fc09c42cce4f20d175dcbf7614d92332" alt="">
+                </div>
+                <div class="name">
+                    <h6>Xem thêm</h6>
+                </div>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div class="hover">
+                <div class="img">
+                    <img src="https://cf.shopee.vn/file/fc09c42cce4f20d175dcbf7614d92332" alt="">
+                </div>
+                <div class="name">
+                    <h6>Xem thêm</h6>
+                </div>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div class="hover">
+                <div class="img">
+                    <img src="https://cf.shopee.vn/file/fc09c42cce4f20d175dcbf7614d92332" alt="">
+                </div>
+                <div class="name">
+                    <h6>Xem thêm</h6>
+                </div>
+               </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
