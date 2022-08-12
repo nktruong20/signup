@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DetailComponent } from './detail/detail.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { CartsComponent } from './carts/carts.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     AppComponent,
     SignupComponent,
     LoginComponent,
-    DetailComponent
+    DetailComponent,
+    CartsComponent
   ],
   imports: [
     BrowserModule,

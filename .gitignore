@@ -40,3 +40,19 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+  "signupForm": [
+    {
+      "fullname": "NKT20",
+      "phone": "0363590281",
+      "email": "mrnkt20052003@gmail.com",
+      "password": "12345",
+      "id": 1
+    },
+    {
+      "fullName": "NKT20",
+      "phone": "1234567890",
+      "email": "a@gmail.com",
+      "password": "12345",
+      "id": 2
+    }
+  ],
